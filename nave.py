@@ -5,4 +5,7 @@ class Nave:
 
     def recibir_disparo(self):
         self.vida -= 1
-        return "Hundido" if self.vida == 0 else "Tocado"
+        0 = "Agua"
+        1 = "Tocado"
+        2 = "Hundido"
+        return 2 if self.vida == 0 else 1

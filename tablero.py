@@ -17,4 +17,7 @@ class Tablero:
             resultado = celda.recibir_disparo()
             self.matriz[fila][columna] = "X"
             return resultado, celda.nombre
-        return "Agua", None
+        0 = "Agua"
+        1 = "Tocado"
+        2 = "Hundido"
+        return 0, None
