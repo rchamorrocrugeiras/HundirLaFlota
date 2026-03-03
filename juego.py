@@ -3,20 +3,23 @@ from nave import Nave
 
 class Juego:
     def __init__(self):
-        self.tablero = Tablero()
+        self.lanzar_ataque(3, 2)
 
     def inicializar_naves(self):
-        n1 = Nave("Acorazado", 4)
-        n2 = Nave("Destructor", 3)
-        self.tablero.colocar_nave(n1, 0, 0, True)
-        self.tablero.colocar_nave(n2, 2, 2, False)
+        pass
+    def mostrar_resultado(self, resultado):
+        if resultado == 0:
+            print("Agua")
+        elif resultado == 1:
+            print("Tocado")
+        elif resultado == 2:
+            print("Hundido")
 
     def lanzar_ataque(self, x, y):
-        return self.tablero.comprobar_impacto(x, y)
+        print(f"Atacando a {x}, {y}")
+        obj_tablero = Tablero()
+        resultado = obj_tablero.comprobar_impacto(x, y)
+        self.mostrar_resultado(resultado)
 
-    def mostrar_resultado(self, resultado):
-        estado, nombre = resultado
-        if estado == "Hundido":
-            print(f"¡Hundido! Has destruido el {nombre}")
-        else:
-            print(estado)
+if __name__ == "__main__":
+        Juego()
