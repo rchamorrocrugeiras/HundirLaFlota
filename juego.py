@@ -7,6 +7,7 @@ class Juego:
 
     def inicializar_naves(self):
         pass
+
     def mostrar_resultado(self, resultado):
         if resultado == 0:
             print("Agua")
