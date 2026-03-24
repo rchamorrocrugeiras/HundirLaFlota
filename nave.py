@@ -1,7 +1,14 @@
 # Creo la clase Nave
 class Nave:
     def __init__(self, nombre, tipo, vida):
-        # Añado las variables a la clase
+        """
+        Constructor de la clase Nave.
+        
+        Args:
+            nombre (str): Nombre de la nave (string)
+            tipo (str): Nombre del barco (submarino, fragata, portaaviones)
+            vida (int): Tamaño de la nave (número de casillas que ocupa)
+        """
         self.nombre = nombre
         self.tipo = tipo
         self.vida = vida
