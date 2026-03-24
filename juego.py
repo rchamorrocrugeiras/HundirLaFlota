@@ -7,6 +7,7 @@ class Juego:
         self.tablero = Tablero()
         # Lanzo ataques a distintas coordenadas
         self.lanzar_ataque(7, 1)
+        self.lanzar_ataque(7, 1)
         self.lanzar_ataque(7, 2)
         self.lanzar_ataque(7, 3)
 
